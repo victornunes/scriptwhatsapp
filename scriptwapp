@@ -1,0 +1,32 @@
+import pyautogui
+import time
+
+#ALERTA PARA INFORMAR A INICIALIZAÇÃO DO CÓDIGO, O CÓDIGO SÓ VAI RODAR QUANDO O USUÁRIO APERTAR OK!
+pyautogui.alert("Atenção POC!! O programa vai começar a rodar, não utilize o PC agora.")
+pyautogui.PAUSE = 0.5
+#Abrir CHROME 
+pyautogui.press('win')
+pyautogui.write('edge')
+pyautogui.press('enter')
+#comando para aguardar amore
+time.sleep(2)
+pyautogui.press('enter')
+#ABRIR WHATSAPP WEB
+pyautogui.write("web.whatsapp.com/")
+pyautogui.press('enter')
+#MOVER O MOUSE ATÉ A POSIÇÃO DESEJADA:
+pyautogui.moveTo(270, 313)
+time.sleep(5)
+#clicar com o mouse
+pyautogui.click()
+pyautogui.moveTo(1004, 377)
+time.sleep(2)
+pyautogui.click()
+time.sleep(2)
+pyautogui.write("/obrigado")
+#comando para dar enter
+time.sleep(1)
+pyautogui.moveTo(802, 625)
+pyautogui.click()
+time.sleep(0.5)
+pyautogui.press('enter')
